@@ -1,5 +1,5 @@
 <?php
-require_once("../config/database.php");
+require_once(__DIR__ . "/../config/database.php");
 
 $id = $_GET["id"];
 
@@ -10,7 +10,7 @@ if ($statement->execute()) {
     "
             <script type='text/javascript'>
                 alert('Data berhasil dihapus');
-                window.location='/pages/product.php';
+                window.location='/toko-sri/pages/product.php';
             </script>
         ";
 }

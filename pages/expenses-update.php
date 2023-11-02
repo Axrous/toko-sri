@@ -1,5 +1,5 @@
 <?php
-require_once("../config/database.php");
+require_once(__DIR__ . "/../config/database.php");
 
 $id = $_POST["id"];
 $desc = $_POST["desc"];
@@ -14,7 +14,7 @@ if ($statement->execute()) {
     "
             <script type='text/javascript'>
                 alert('Data berhasil diupdate');
-                window.location='/pages/expenses.php';
+                window.location='/toko-sri/pages/expenses.php';
             </script>
         ";
 }

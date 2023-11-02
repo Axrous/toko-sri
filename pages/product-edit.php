@@ -1,5 +1,5 @@
 <?php
-require_once("../config/database.php");
+require_once(__DIR__ . "/../config/database.php");
 
 $name = $_POST["name"];
 $price_buy = $_POST["price_buy"];
@@ -14,7 +14,7 @@ if ($statement->execute()) {
     "
             <script type='text/javascript'>
                 alert('Data berhasil diupdate');
-                window.location='/pages/product.php';
+                window.location='/toko-sri/pages/product.php';
             </script>
         ";
 }

@@ -1,5 +1,5 @@
 <?php
-require_once("../config/database.php");
+require_once(__DIR__ . "/../config/database.php");
 
 $date = $_POST["date"];
 $desc = $_POST["desc"];
@@ -16,7 +16,7 @@ if ($statement->execute()) {
     "
             <script type='text/javascript'>
                 alert('Data telah disimpan');
-                window.location='/pages/expenses.php';
+                window.location='/toko-sri/pages/expenses.php';
             </script>
         ";
 }

@@ -1,6 +1,6 @@
 <?php
 
-require_once("../config/database.php");
+require_once(__DIR__ . "/../config/database.php");
 
 $productId = $_POST["product"];
 $amountProduct = $_POST["amount"];
@@ -34,13 +34,13 @@ try {
 
     $conn->commit();
     echo "<script type='text/javascript'>
-        window.location='/pages/incomes.php';
+        window.location='/toko-sri/pages/incomes.php';
         </script>";
 } catch (\Exception $e) {
     echo $e->getMessage();
     $conn->rollback();
     echo "<script type='text/javascript'>
             alert('" . $e->getMessage() . "');
-            window.location='/pages/incomes-form-add.php';
+            window.location='/toko-sri/pages/incomes-form-add.php';
         </script>";
 }
