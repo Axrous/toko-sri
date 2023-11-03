@@ -26,7 +26,7 @@ $total_pages = ceil($total_row / $limit);
 <body>
     <?php include("../includes/side_bar.php") ?>
     <div class="p-4 sm:ml-64">
-        <a href="./incomes-form-add.php" class="bg-blue-600 text-white px-4 py-3 rounded-lg mt-10 inline-block">Add Pemasukan</a>
+        <a href="/toko-sri/pages/incomes-form-add.php" class="bg-blue-600 text-white px-4 py-3 rounded-lg mt-10 inline-block">Add Pemasukan</a>
         <table class="w-full text-sm text-left text-gray-500 mt-10">
             <thead class="text-xs text-gray-700 uppercase bg-gray-50  ">
                 <tr>

@@ -1,9 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
 <?php require_once(__DIR__ . "/../config/database.php"); ?>
+<?php include("../includes/header.php") ?>
 
 <body class="max-w-screen-lg mx-auto">
     <?php include("../includes/side_bar.php") ?>
+
     <div class="p-4 sm:ml-64">
         <h1 class="mt-10 mx-auto text-2xl">TAMBAH PEMASUKAN</h1>
         <form class="mt-8" method="post" action="./incomes-save.php" enctype="multipart/form-data">
