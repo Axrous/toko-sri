@@ -101,17 +101,13 @@ if (isset($_GET["product_name"])) {
         </div>
         <div class="mx-auto mt-10 text-center">
             <ul class="inline-flex -space-x-px text-base h-10">
-                <li>
-                    <a href="#" class="flex items-center justify-center px-4 h-10 ml-0 leading-tight text-gray-500 bg-white border border-gray-300 rounded-l-lg hover:bg-gray-100 hover:text-gray-700 ">Previous</a>
-                </li>
+
                 <?php for ($i = 1; $i <= $total_pages; $i++) { ?>
                     <li>
                         <a href="./product.php?page=<?= $i ?>" class="flex items-center justify-center px-4 h-10 leading-tight text-gray-500 bg-white border border-gray-300 hover:bg-gray-100 hover:text-gray-700 "><?= $i ?></a>
                     </li>
                 <?php } ?>
-                <li>
-                    <a href="#" class="flex items-center justify-center px-4 h-10 leading-tight text-gray-500 bg-white border border-gray-300 rounded-r-lg hover:bg-gray-100 hover:text-gray-700 ">Next</a>
-                </li>
+
             </ul>
         </div>
     </div>
